@@ -117,6 +117,14 @@ table.multiElement {
     width: 100%;
 }
 
+tr#left {
+    text-align: right;
+}
+
+tr#right {
+    text-align: left;
+}
+
 table.multiElement td, table.multiElement th {
     text-align: center;
     padding: 8px;
