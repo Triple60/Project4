@@ -1,4 +1,24 @@
-/* Coolor link to style colors: https://coolors.co/ffffff-000000-37474f-01579b-a3dffb */
+/* Coolor link to style colors: https://coolors.co/ffffff-000000-37474f-01579b-a3dffb
+
+The first color (pure white, #FFFFFF) is for the background, as well as text used over a picture.
+The second color (pure black, #000000) is for the text.
+The third color (a shade of grey, #37474F) is for the sidenav.
+The fourth color (a royal blue, #01579B) is for accenting specific words/phrases.
+The fifth color (a sky blue, #A3DFFB) is for the active class in the sidenav, as well as the footer, though I'm considering taking this color out and using only the royal blue for accents.*/
+
+a {
+    color: #01579B;
+    text-decoration: none;
+}
+
+.appear {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.appear:hover {
+    opacity: 1;
+}
 
 body {
     background-color: white;
@@ -6,40 +26,20 @@ body {
     color: black;
 }
 
-.container {
-    margin: 0% 10%;
+.blogEntry {
+    margin: 2.5% 10%;
 }
 
-.colorAccent {
-    color: #01579B;
+/* At the moment, currently being unused, although will be nice to have in case I'd like to use it in the future.
+
+.blur img {
+    transition: all 1s ease;
 }
 
-a {
-    color: #01579B;
-    text-decoration: none;
-}
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
- 
-.pic {
-    border: 10px solid #fff;
-    float: left;
-    height: 300px;
-    width: 300px;
-    margin: 20px;
-    overflow: hidden;
-    -webkit-box-shadow: 5px 5px 5px #111;
-    box-shadow: 5px 5px 5px #111;
-}
-
-.constantHeight {
-    height: 400px;
-}
+.blur img:hover {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}*/
 
 #center {
     display: block;
@@ -47,6 +47,59 @@ a {
     margin-right: auto;
 }
 
+.colorAccent {
+    color: #01579B;
+}
+
+.constantHeight {
+    height: 400px;
+}
+
+.constantWidth {
+    width: 500px;
+}
+
+.container {
+    margin: 0% 10%;
+}
+
+.footer { 
+    position: fixed;     
+    text-align: right;  
+    bottom: 0px; 
+    width: 99%;
+    background-image: url(../images/footerInner.png) 500px 500px no-repeat;
+}
+
+/*The image class is used in the index page, specifically for having text over the image.*/
+.image {
+    position: relative;
+}
+
+.image h2 {
+    position: absolute;
+    top: 275px;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+input {
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*This is another unused class, but it's something I'm working on for the footer.
+.overBackground {
+   background: rgb(0, 0, 0); /* fallback color *//*
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}*/
+
+/*The sidenav class is all for the side navbar and the elements inside it.*/
 .sidenav {
     height: 100%;
     width: 0;
@@ -85,44 +138,10 @@ a {
     margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.blur img {
-    transition: all 1s ease;
-}
-
-.blur img:hover {
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-}
-
-.blur p {
-    opacity: 0;
-    transition: all 1s ease;
-}
-
-.blur p:hover {
-    opacity: 1;
-}
-
-input {
-    font-family: 'Raleway', sans-serif;
-}
-
+/*I wanted a table that had a bit more horizontal spacing between elements for the Contact page, so I made the multiElement class.*/
 table.multiElement {
     border-collapse: collapse;
     width: 100%;
-}
-
-tr#left {
-    text-align: right;
-}
-
-tr#right {
-    text-align: left;
 }
 
 table.multiElement td, table.multiElement th {
@@ -130,9 +149,11 @@ table.multiElement td, table.multiElement th {
     padding: 8px;
 }
 
-.footer{ 
-    position: fixed;     
-    text-align: right;  
-    bottom: 0px; 
-    width: 99%;
+/*These two are for the portfolio page, where some pictures are aligned to the left (#left), and some are aligned to the right (#right). These classes affect the text corresponding to the picture.*/
+tr#left {
+    text-align: right;
+}
+
+tr#right {
+    text-align: left;
 }
