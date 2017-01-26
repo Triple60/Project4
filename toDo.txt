@@ -1,0 +1,7 @@
+Ideas:
+Hover animation for footer
+Fixing the background images behind the footer
+Hover animation for pictures
+	This would involve changing the image class/tag
+Add JS functionality to the form
+Fixing the background hover color for the index page

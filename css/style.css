@@ -68,7 +68,7 @@ body {
     text-align: right;  
     bottom: 0px; 
     width: 99%;
-    background-image: url(../images/footerInner.png) 500px 500px no-repeat;
+    background: url(../images/footerInner.png) 500px 500px no-repeat;
 }
 
 /*The image class is used in the index page, specifically for having text over the image.*/
@@ -79,7 +79,8 @@ body {
 .image h2 {
     position: absolute;
     top: 275px;
-    width: 100%;
+    width: 97%;
+    /*The width is weird because we were going to look at the background expanding outside of the image div that I have set up currently... You said that it'd be fine to submit like this and implement the correct version in my next draft.*/
     color: #FFFFFF;
 }
 
@@ -97,6 +98,7 @@ input {
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
    padding: 10px;
+   width: 50%;
 }
 
 /*The sidenav class is all for the side navbar and the elements inside it.*/
