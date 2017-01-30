@@ -1,7 +1,17 @@
-Ideas:
-Hover animation for footer
-Fixing the background images behind the footer
-Hover animation for pictures
-	This would involve changing the image class/tag
-Add JS functionality to the form
-Fixing the background hover color for the index page
+Punchout List for Draft 2:
+
+Animations:
+	Hover animation for pictures
+		This would involve changing the image class/tag
+	Hover animation for footer
+
+Colors:
+	Make background grey, maybe to make text and colors pop, use white font
+
+Footer:
+	Background footer images behind footer
+	Sitemap?
+	Sticky footer that takes up the whole bottom width?
+
+Other:
+	Add JS functionality to the form
